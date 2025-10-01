@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="KTGK.Master.cs" Inherits="KTGK.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>ĐỀ THI KIỂM TRA GIỮA KỲ</title>
+    <link href="KTGK.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+        <!-- HEADER -->
+        <header>
+            <!-- Banner -->
+            <div class="banner"></div>
+
+            <!-- Menu ngang -->
+            <nav>
+                <asp:HyperLink ID="HyperLinkTrangChu" runat="server" NavigateUrl="~/Trangchu.aspx">TRANG CHỦ</asp:HyperLink>
+                <asp:HyperLink ID="HyperLinkGioiThieu" runat="server" NavigateUrl="~/Gioithieu.aspx">GIỚI THIỆU</asp:HyperLink>
+                <asp:HyperLink ID="HyperLinkVatu" runat="server" NavigateUrl="~/Vattu.aspx">VẬT TƯ</asp:HyperLink>
+                <asp:HyperLink ID="HyperLinkKhuyenMai" runat="server" NavigateUrl="~/Khuyenmai.aspx">KHUYẾN MÃI</asp:HyperLink>
+                <asp:HyperLink ID="HyperLinkTinTuc" runat="server" NavigateUrl="~/TinTuc.aspx">TIN TỨC</asp:HyperLink>
+                <asp:HyperLink ID="HyperLinkLienHe" runat="server" NavigateUrl="~/LienHe.aspx">LIÊN HỆ</asp:HyperLink>
+            </nav>
+        </header>
+
+        <!-- CONTAINER: gồm sidebar và nội dung chính -->
+        <div class="container">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <h3>SMARTPHONE HOT NHẤT</h3>
+                <asp:HyperLink ID="HyperLinkiPhone15" runat="server" NavigateUrl="~/iPhone15.aspx">iPhone 15 Pro Max</asp:HyperLink>
+                <asp:HyperLink ID="HyperLinkSamsungS24" runat="server" NavigateUrl="~/SamsungS24.aspx">Samsung Galaxy S24 Ultra</asp:HyperLink>
+                <asp:HyperLink ID="HyperLinkXiaomi14" runat="server" NavigateUrl="~/Xiaomi14.aspx">Xiaomi 14 Pro</asp:HyperLink>
+                <asp:HyperLink ID="HyperLinkOPPOFind" runat="server" NavigateUrl="~/OPPOFind.aspx">OPPO Find X7 Ultra</asp:HyperLink>
+            </div>
+
+            <!-- Master Page -->
+            <div class="right">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            Nguyễn Minh Nguyên - 28210228514
+        </footer>
+</body>
+</html>
